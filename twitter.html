@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Clone</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/section.css">
+  <link rel="stylesheet" href="styles/aside.css">
+  <script src="https://kit.fontawesome.com/4e734dc28c.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <main>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="header--wrapper">
+      <div class="header--top--middle">
+  
+        <div class="header--middle">
+          <i class="fa-brands fa-twitter fa-header" style="color: var(--clr-blue);"></i>
+          <div class="header--middle__card">
+            <i class="fa-solid fa-house fa-header"></i>
+            <div class="header--middle__text selected-home">Home</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-solid fa-magnifying-glass fa-header"></i>
+            <div class="header--middle__text">Explore</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-regular fa-bell fa-header"></i>
+            <div class="header--middle__text">Notifications</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-regular fa-envelope fa-header"></i>
+            <div class="header--middle__text">Messages</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-solid fa-list fa-header"></i>
+            <div class="header--middle__text">Lists</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-regular fa-bookmark fa-header"></i>
+            <div class="header--middle__text">Bookmarks</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-regular fa-circle-check fa-header"></i>
+            <div class="header--middle__text">Verified</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-regular fa-user fa-header"></i>
+            <div class="header--middle__text">Profile</div>
+          </div>
+          <div class="header--middle__card">
+            <i class="fa-solid fa-ellipsis fa-header"></i>
+            <div class="header--middle__text">More</div>
+          </div>
+          <div class="header--middle__card">
+            <button class="tweet--btn">
+              <p>Tweet</p>
+              <i class="fa-solid fa-feather"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="header--bottom">
+        <div class="profile--card">
+          <div class="profile--wrapper">
+            <div class="profile--image">
+              <img class="own-pfp card--size" src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80">
+            </div>
+            <div class="profile--handle">
+              <div class="username">Selvenchi</div>
+              <div class="desc">@Selvenchi</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis fa-bottom"></i>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- POSTS -->
+  <section class="section">
+    <nav class="nav--top">
+      <div class="nav--home">Home</div>
+      <div class="nav--info">
+        <button class="nav--info__button">For you</button>
+        <button class="nav--info__button">Following</button>
+      </div>
+    </nav>
+
+    <section class="section--tweet">
+      <div class="tweet--pfp">
+        <img class="pfp card--size" src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80">
+      </div>
+      <div class="tweet--info">
+        <input class="tweet--input" placeholder="What is happening?">
+        <div class="tweet--wrapper">
+          <div class="tweet--icons">
+            <div class="tweet--icons-wrapper">
+              <i class="fa-regular fa-image fa-tweet"></i>
+              <div class="tool-tip">Media</div>
+            </div>
+
+            <div class="tweet--icons-wrapper">
+              <i class="fa-regular fa-note-sticky fa-tweet"></i>
+              <div class="tool-tip">GIF</div>
+            </div>
+            
+            <div class="tweet--icons-wrapper">
+              <i class="fa-solid fa-list-ul fa-tweet"></i>
+              <div class="tool-tip">Poll</div>
+            </div>
+
+            <div class="tweet--icons-wrapper">
+              <i class="fa-regular fa-face-smile fa-tweet"></i>
+              <div class="tool-tip">Emoji</div>
+            </div>
+
+            <div class="tweet--icons-wrapper">
+              <i class="fa-regular fa-calendar fa-tweet"></i>
+              <div class="tool-tip">Schedule</div>
+            </div>
+
+            <div class="tweet--icons-wrapper">
+              <i class="fa-solid fa-location-dot fa-tweet"></i>
+              <div class="tool-tip">Location</div>
+            </div>
+
+          </div>
+          <button class="tweet--btn tweet--size">Tweet</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="posts--tweet">
+      <div class="tweet--box">
+        <div class="tweet--pfp">
+          <img class="pfp pfp--size" src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+        </div>
+        <div class="tweet--tool-tip">
+          <img class="pfp tool-tip--size" src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+          <div class="tweet--username">Ray</div>
+          <div class="tweet--handle">@raywoosh</div>
+          <div class="tool-tip--desc">The Official Cat of Twitter</div>
+          <div class="following-followers">
+            <div class="following">
+              <div class="card--info">1,933 <span class="tweet--handle">Following</span></div>
+            </div>
+            <div class="followers">
+              <div class="card--info">1.2M <span class="tweet--handle">Followers</span></div>
+            </div>
+          </div>
+          <div class="followed-by--card">
+            <img class="pfp followed--size" src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+            <div class="followed-by">Followed by Gaby</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweet--info-post">
+        <div class="tweet--info__top">
+          <div class="tweet--info__top-wrapper">
+            <div class="tweet--username tweet--margin">Ray</div>
+            <div class="tweet--handle">@raywoosh</div>
+            <div class="tweet--time"> &#183; 8h</div>
+          </div>
+          <i class="fa-solid fa-ellipsis fa-more"></i>
+        </div>
+
+        <div class="tweet--info__hashtag">&#x23;2023</div>
+
+        <div class="tweet--info__image">
+          <img class="tweet--img" src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1092&q=80">
+        </div>
+
+        <div class="tweet--interact">
+          <div class="tweet--interact-wrapper">
+            <i class="fa-regular fa-comment fa-interact reply"></i>
+            <div class="reply-num">84</div>
+            <div class="tool-tip">Reply</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-solid fa-retweet fa-interact retweet"></i>
+            <div class="retweet-num">15.8K</div>
+            <div class="tool-tip">Retweet</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-regular fa-heart fa-interact likes"></i>
+            <div class="likes-num">53.6K</div>
+            <div class="tool-tip">Like</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-solid fa-chart-simple fa-interact view"></i>
+            <div class="view-num">1.5M</div>
+            <div class="tool-tip">View</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-solid fa-share fa-interact share"></i>
+            <div class="tool-tip">Share</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="posts--tweet">
+      <div class="tweet--box">
+        <div class="tweet--pfp">
+          <img class="pfp pfp--size" src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+        </div>
+        <div class="tweet--tool-tip">
+          <img class="pfp tool-tip--size" src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+          <div class="tweet--username">Gaby</div>
+          <div class="tweet--handle">@gabblegobble</div>
+          <div class="tool-tip--desc">The Unofficial Cat of Twitter</div>
+          <div class="following-followers">
+            <div class="following">
+              <div class="card--info">82 <span class="tweet--handle">Following</span></div>
+            </div>
+            <div class="followers">
+              <div class="card--info">1.2K <span class="tweet--handle">Followers</span></div>
+            </div>
+          </div>
+          <div class="followed-by--card">
+            <img class="pfp followed--size" src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+            <div class="followed-by">Followed by Ray</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweet--info-post">
+        <div class="tweet--info__top">
+          <div class="tweet--info__top-wrapper">
+            <div class="tweet--username tweet--margin">Gaby</div>
+            <div class="tweet--handle">@gabblegobble</div>
+            <div class="tweet--time"> &#183; 8h</div>
+          </div>
+          <i class="fa-solid fa-ellipsis fa-more"></i>
+        </div>
+
+        <div class="tweet--info__caption">Coffe, yum.</div>
+
+        <div class="tweet--info__image">
+          <img class="tweet--img" src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80">
+        </div>
+
+        <div class="tweet--interact">
+          <div class="tweet--interact-wrapper">
+            <i class="fa-regular fa-comment fa-interact reply"></i>
+            <div class="reply-num">12</div>
+            <div class="tool-tip">Reply</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-solid fa-retweet fa-interact retweet"></i>
+            <div class="retweet-num">45</div>
+            <div class="tool-tip">Retweet</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-regular fa-heart fa-interact likes"></i>
+            <div class="likes-num">878</div>
+            <div class="tool-tip">Like</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-solid fa-chart-simple fa-interact view"></i>
+            <div class="view-num">12K</div>
+            <div class="tool-tip">View</div>
+          </div>
+  
+          <div class="tweet--interact-wrapper">
+            <i class="fa-solid fa-share fa-interact share"></i>
+            <div class="tool-tip">Share</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+
+  <!-- ASIDE -->
+  <aside class="aside">
+    <div class="search--card">
+      <i class="fa-solid fa-magnifying-glass fa-search"></i>
+      <input class="search--bar" placeholder="Search Twitter">
+    </div>
+
+    <div class="verified--card">
+      <p class="card--title">Get Verified</p>
+      <p class="card--info">Subscribe to unlock new features.</p>
+      <button class="verified--btn">Get Verified</button>
+    </div>
+
+    <div class="trends--card">
+      <p class="card--title trends--size">Trends for you</p>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <div class="trends--wrapper">
+        <div class="trends--top">
+          <p class="trends--text">Business & Finance &#183; Trending</p>
+          <i class="fa-solid fa-ellipsis fa-trends"></i>
+        </div>
+        <p class="card--info">Elon</p>
+        <p class="trends--text">1.78M Tweets</p>
+      </div>
+
+      <p class="show-more" style="color: var(--clr-blue);">Show More</p>
+    </div>
+
+    <div class="suggestion--card">
+      <p class="card--title trends--size">Who to follow</p>
+      
+      <div class="suggestion--box">
+        <div class="profile--wrapper">
+          <div class="profile--image">
+            <img class="pfp card--size" src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+          </div>
+          <div class="profile--handle">
+            <div class="tweet--username">Oliver</div>
+            <div class="desc">@ol1ver</div>
+          </div>
+        </div>
+        <button class="verified--btn">Follow</button>
+      </div>
+
+      <div class="suggestion--box">
+        <div class="profile--wrapper">
+          <div class="profile--image">
+            <img class="pfp card--size" src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+          </div>
+          <div class="profile--handle">
+            <div class="tweet--username">Oliver</div>
+            <div class="desc">@ol1ver</div>
+          </div>
+        </div>
+        <button class="verified--btn">Follow</button>
+      </div>
+
+      <div class="suggestion--box">
+        <div class="profile--wrapper">
+          <div class="profile--image">
+            <img class="pfp card--size" src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+          </div>
+          <div class="profile--handle">
+            <div class="tweet--username">Oliver</div>
+            <div class="desc">@ol1ver</div>
+          </div>
+        </div>
+        <button class="verified--btn">Follow</button>
+      </div>
+
+      <p class="show-more" style="color: var(--clr-blue);">Show More</p>
+    </div>
+
+    <div class="extra--card">
+      <a class="extra--link" href="https://twitter.com/en/tos" target="_blank">Terms of Service</a>
+      <a class="extra--link" href="https://twitter.com/en/tos" target="_blank">Privacy Policy</a>
+      <a class="extra--link" href="https://twitter.com/en/tos" target="_blank">Cookie Policy</a>
+      <a class="extra--link" href="https://twitter.com/en/tos" target="_blank">Accessibility</a>
+      <a class="extra--link" href="https://twitter.com/en/tos" target="_blank">Ads Info</a>
+      <div>
+        <a class="extra--link" href="https://twitter.com/en/tos" target="_blank">More</a>
+        <i class="fa-solid fa-ellipsis fa-extra"></i>
+      </div>
+      <p  class="extra--info">© 2023 X Corp.</p>
+    </div>
+  </aside>
+
+  </main>
+</body>
+</html>

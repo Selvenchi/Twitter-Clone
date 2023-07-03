@@ -1,0 +1,279 @@
+.header {
+  background-color: white;
+  /* border-right: 1px solid rgb(233, 231, 231); */
+  width: 16.5rem;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left:0;
+  z-index:101;
+}
+
+.header--wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.header--top--middle {
+  padding: 1rem 1rem 8rem 1rem;
+  height: 100%;
+  overflow-y: scroll;
+
+  position: relative;
+  /* background-color: lightpink; */
+}
+
+.header--middle {
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.header--middle__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: 0.25s;
+}
+
+.fa-header{
+  font-size:1.25rem;
+}
+
+
+/* .fa-header {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  aspect-ratio: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .fa-twitter {
+  font-size: 1.5rem;
+  aspect-ratio: 1;
+  background-color: red;
+} */
+
+.fa-twitter{
+  padding:1rem;
+  border-radius: 100%;
+  font-size:1.5rem;
+  transition:0.25s;
+  cursor: pointer;
+}
+
+.fa-twitter:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.tweet--btn  {
+  width: 14rem;
+  height: 3rem;
+  border: none;
+  border-radius: 7rem;
+  padding: 0.5rem;
+  background-color: var(--clr-blue);
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header--middle__text {
+  font-size: 1.25rem;
+}
+
+.header--bottom {
+  background-color: white;
+  position: absolute;
+  bottom: 0rem;
+  left:0;
+  right:0;
+
+  /* left:50%;
+  transform: translate(-50%, -50%); */
+  /* background-color:lightseagreen; */
+  cursor: pointer;
+
+}
+
+.header--bottom:hover .profile--card{
+  background-color: rgb(231, 230, 230);
+  border-radius: 5rem;
+
+}
+
+.profile--card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.25s;
+}
+
+.selected-home {
+  font-weight: bold;
+}
+
+.pfp,
+.own-pfp {
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.card--size {
+  margin-right: 1rem;
+  width: 2.5rem;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.desc {
+  color: var(--clr-gray);
+}
+
+.profile--wrapper {
+  display: flex;
+}
+
+.header--middle__card:not(:last-child, .fa-twitter):hover {
+  background-color: rgb(231, 230, 230);
+  cursor: pointer;
+}
+
+/* .profile--card:hover {
+  background-color: rgb(231, 230, 230);
+  cursor: pointer;
+} */
+
+.tweet--btn:hover{
+  background-color: rgb(30, 118, 177);
+}
+
+/* .tweet--btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+} */
+
+.fa-feather {
+  display: none;
+}
+
+@media (max-width: 1264px) {
+.fa-twitter{
+  padding:.7rem;
+}
+
+.header--middle__card{
+  aspect-ratio: 1;
+}
+
+  .header {
+    width: 4.5rem;
+    /* opacity: 0;
+    visibility: none; */
+  }
+  
+  .header--middle__text {
+    display: none;
+  }
+
+  .header--middle__card {
+    padding: 0.7rem;
+  }
+
+  .tweet--btn {
+    width: fit-content;
+    aspect-ratio: 1;
+  }
+
+  .tweet--btn p {
+    display: none;
+  }
+
+  .fa-feather {
+    display: block;
+  }
+
+  .profile--card{
+    margin:0;
+    padding:0;
+    aspect-ratio: 1;
+  }
+
+  .own-pfp{
+    width:60%;
+    aspect-ratio: 1;
+  }
+
+  .profile--card{
+    width:90%;
+    margin:0 auto;
+  }
+
+  .profile--image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile--wrapper{
+    display: block;
+    
+  }
+
+  .profile--handle {
+    display: none;
+  }
+
+  .fa-bottom {
+    display: none;
+  }
+
+
+  /* .profile--image, .profile--wrapper, .profile--card{
+    width:100%;
+  } */
+
+  .header--bottom {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height:5rem;
+  }
+
+  .card--size {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header--middle{
+    align-items: center;
+  }
+
+}
